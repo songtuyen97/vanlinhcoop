@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NongSan Xanh — Cung cấp nông sản sạch, cao cấp từ vùng nguyên liệu Việt Nam. Gạo hữu cơ, cà phê, hạt điều, mật ong, tiêu, trà xanh chất lượng cao.">
-  <meta name="keywords" content="nông sản sạch, nông sản cao cấp, gạo hữu cơ, cà phê Việt Nam, hạt điều, mật ong, tiêu, trà xanh">
-  <meta name="author" content="NongSan Xanh">
+  <meta name="description"
+    content="VanLinh Coop — Cung cấp nông sản sạch, cao cấp từ vùng nguyên liệu Việt Nam. Gạo hữu cơ, cà phê, hạt điều, mật ong, tiêu, trà xanh chất lượng cao.">
+  <meta name="keywords"
+    content="nông sản sạch, nông sản cao cấp, gạo hữu cơ, cà phê Việt Nam, hạt điều, mật ong, tiêu, trà xanh">
+  <meta name="author" content="VanLinh Coop">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="NongSan Xanh — Nông Sản Sạch Cao Cấp">
+  <meta property="og:title" content="VanLinh Coop — Nông Sản Sạch Cao Cấp">
   <meta property="og:description" content="Trải nghiệm nông sản sạch từ vùng nguyên liệu thuần khiết Việt Nam.">
   <meta property="og:type" content="website">
-  <title>NongSan Xanh — Nông Sản Sạch Cao Cấp Từ Thiên Nhiên Việt Nam</title>
+  <title>VanLinh Coop — Nông Sản Sạch Cao Cấp Từ Thiên Nhiên Việt Nam</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- ========== HEADER ========== -->
   <header class="header" id="header">
     <div class="container">
-      <a href="#trang-chu" class="logo" aria-label="NongSan Xanh — Trang chủ">
+      <a href="#trang-chu" class="logo" aria-label="VanLinh Coop — Trang chủ">
         <span class="logo-icon" aria-hidden="true">🌿</span>
-        NongSan Xanh
+        VanLinh Coop
       </a>
 
       <nav>
@@ -52,44 +58,97 @@
     <!-- ========== HERO ========== -->
     <section class="hero" id="trang-chu">
       <div class="hero-bg">
-        <img src="images/hero-banner.png" alt="Nông sản tươi ngon — trái cây nhiệt đới Việt Nam trên bàn gỗ mộc mạc" loading="eager">
+        <img src="images/hero-banner.png" alt="Nông sản tươi ngon — trái cây nhiệt đới Việt Nam trên bàn gỗ mộc mạc"
+          loading="eager">
       </div>
       <div class="hero-overlay"></div>
 
-      <div class="container">
+      <!-- Floating decorative particles -->
+      <div class="hero-particles" aria-hidden="true">
+        <span class="particle particle-1">🌿</span>
+        <span class="particle particle-2">🍃</span>
+        <span class="particle particle-3">🌾</span>
+        <span class="particle particle-4">☘️</span>
+        <span class="particle particle-5">🌱</span>
+      </div>
+
+      <div class="container hero-layout">
         <div class="hero-content">
-          <span class="hero-badge fade-in">🌱 Nông sản hữu cơ</span>
+          <!-- Animated accent line -->
+          <div class="hero-accent-line fade-in" aria-hidden="true"></div>
+
+          <span class="hero-badge fade-in">
+            <span class="hero-badge-dot"></span>
+            🌱 Nông sản hữu cơ đạt chuẩn quốc tế
+          </span>
 
           <h1 class="fade-in fade-in-delay-1">
-            Tinh Hoa Nông Sản<br><span>Từ Thiên Nhiên Việt Nam</span>
+            <span class="hero-title-line">Tinh Hoa</span>
+            <span class="hero-title-line hero-title-gradient">Nông Sản Việt Nam</span>
           </h1>
 
           <p class="hero-subtitle fade-in fade-in-delay-2">
-            Chúng tôi mang đến những sản phẩm nông nghiệp cao cấp, được chọn lọc kỹ lưỡng
-            từ các vùng nguyên liệu sạch nhất Việt Nam — an toàn, tươi ngon và bền vững.
+            Được chọn lọc kỹ lưỡng từ các vùng nguyên liệu sạch nhất — an toàn, tươi ngon,
+            mang hương vị thiên nhiên thuần khiết đến bàn ăn của bạn.
           </p>
 
-          <div class="fade-in fade-in-delay-3" style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href="#san-pham" class="btn btn-primary">
+          <div class="hero-cta-group fade-in fade-in-delay-3">
+            <a href="#san-pham" class="btn btn-primary btn-lg">
+              <span class="material-icons-outlined" aria-hidden="true" style="font-size:1.3rem">storefront</span>
               Xem Sản Phẩm
               <span class="material-icons-outlined" aria-hidden="true" style="font-size:1.2rem">arrow_forward</span>
             </a>
-            <a href="#ve-chung-toi" class="btn btn-outline">Tìm Hiểu Thêm</a>
+            <button type="button" class="btn btn-glass" id="open-contact-modal">
+              <span class="material-icons-outlined" aria-hidden="true" style="font-size:1.2rem">call</span>
+              Liên Hệ Ngay
+            </button>
           </div>
 
-          <div class="hero-stats fade-in fade-in-delay-4">
-            <div class="stat-item">
-              <h3 data-count="10" data-suffix="+">0</h3>
-              <p>Năm kinh nghiệm</p>
+          <!-- Trust indicators -->
+          <div class="hero-trust fade-in fade-in-delay-4">
+            <div class="trust-item">
+              <span class="material-icons-outlined" aria-hidden="true">verified</span>
+              <span>Chứng nhận hữu cơ</span>
             </div>
-            <div class="stat-item">
-              <h3 data-count="500" data-suffix="+">0</h3>
-              <p>Khách hàng tin tưởng</p>
+            <div class="trust-item">
+              <span class="material-icons-outlined" aria-hidden="true">eco</span>
+              <span>100% tự nhiên</span>
             </div>
-            <div class="stat-item">
-              <h3 data-count="30" data-suffix="+">0</h3>
-              <p>Sản phẩm đa dạng</p>
+            <div class="trust-item">
+              <span class="material-icons-outlined" aria-hidden="true">local_shipping</span>
+              <span>Giao toàn quốc</span>
             </div>
+          </div>
+        </div>
+
+        <!-- Glassmorphism stats card -->
+        <div class="hero-card fade-in fade-in-delay-3">
+          <div class="hero-card-glow" aria-hidden="true"></div>
+          <div class="hero-card-inner">
+            <div class="hero-card-header">
+              <span class="hero-card-icon">📊</span>
+              <h3>Tại Sao Chọn Chúng Tôi?</h3>
+            </div>
+            <div class="hero-card-stats">
+              <div class="stat-block">
+                <div class="stat-number" data-count="10" data-suffix="+">0</div>
+                <div class="stat-label">Năm<br>kinh nghiệm</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-block">
+                <div class="stat-number" data-count="500" data-suffix="+">0</div>
+                <div class="stat-label">Khách hàng<br>tin tưởng</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-block">
+                <div class="stat-number" data-count="30" data-suffix="+">0</div>
+                <div class="stat-label">Sản phẩm<br>đa dạng</div>
+              </div>
+            </div>
+            <a href="#ve-chung-toi" class="hero-card-link">
+              Tìm hiểu thêm
+              <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
+            </a>
           </div>
         </div>
       </div>
@@ -107,17 +166,20 @@
           <!-- Product 1 -->
           <article class="product-card fade-in fade-in-delay-1">
             <div class="product-card-img">
-              <img src="images/product-rice.png" alt="Gạo hữu cơ ST25 — gạo trắng thơm lài trong bát gốm" loading="lazy">
+              <img src="images/product-rice.png" alt="Gạo hữu cơ ST25 — gạo trắng thơm lài trong bát gốm"
+                loading="lazy">
               <span class="product-badge">Bán chạy</span>
             </div>
             <div class="product-card-body">
               <h3>Gạo Hữu Cơ ST25</h3>
-              <p>Gạo thơm lài đặc sản Sóc Trăng, đạt giải gạo ngon nhất thế giới. Canh tác hoàn toàn hữu cơ, không thuốc trừ sâu.</p>
+              <p>Gạo thơm lài đặc sản Sóc Trăng, đạt giải gạo ngon nhất thế giới. Canh tác hoàn toàn hữu cơ, không thuốc
+                trừ sâu.</p>
               <div class="product-card-footer">
                 <span class="product-price">Liên hệ báo giá</span>
-                <a href="#lien-he" class="product-link">
-                  Chi tiết <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
-                </a>
+                <button type="button" class="product-link open-contact-modal">
+                  Chi tiết <span class="material-icons-outlined" aria-hidden="true"
+                    style="font-size:1rem">arrow_forward</span>
+                </button>
               </div>
             </div>
           </article>
@@ -125,17 +187,20 @@
           <!-- Product 2 -->
           <article class="product-card fade-in fade-in-delay-2">
             <div class="product-card-img">
-              <img src="images/product-coffee.png" alt="Cà phê Robusta Đắk Lắk — hạt cà phê rang mộc trên thìa gỗ" loading="lazy">
+              <img src="images/product-coffee.png" alt="Cà phê Robusta Đắk Lắk — hạt cà phê rang mộc trên thìa gỗ"
+                loading="lazy">
               <span class="product-badge">Đặc sản</span>
             </div>
             <div class="product-card-body">
               <h3>Cà Phê Robusta Đắk Lắk</h3>
-              <p>Hạt cà phê nguyên chất từ cao nguyên Đắk Lắk, rang mộc thủ công, hương vị đậm đà, thơm nồng đặc trưng.</p>
+              <p>Hạt cà phê nguyên chất từ cao nguyên Đắk Lắk, rang mộc thủ công, hương vị đậm đà, thơm nồng đặc trưng.
+              </p>
               <div class="product-card-footer">
                 <span class="product-price">Liên hệ báo giá</span>
-                <a href="#lien-he" class="product-link">
-                  Chi tiết <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
-                </a>
+                <button type="button" class="product-link open-contact-modal">
+                  Chi tiết <span class="material-icons-outlined" aria-hidden="true"
+                    style="font-size:1rem">arrow_forward</span>
+                </button>
               </div>
             </div>
           </article>
@@ -143,16 +208,19 @@
           <!-- Product 3 -->
           <article class="product-card fade-in fade-in-delay-3">
             <div class="product-card-img">
-              <img src="images/product-cashew.png" alt="Hạt điều Bình Phước — hạt điều rang muối trong rổ tre" loading="lazy">
+              <img src="images/product-cashew.png" alt="Hạt điều Bình Phước — hạt điều rang muối trong rổ tre"
+                loading="lazy">
             </div>
             <div class="product-card-body">
               <h3>Hạt Điều Bình Phước</h3>
-              <p>Hạt điều rang muối bùi béo, giòn tan, được chế biến từ nguồn nguyên liệu sạch vùng Bình Phước, tiêu chuẩn xuất khẩu.</p>
+              <p>Hạt điều rang muối bùi béo, giòn tan, được chế biến từ nguồn nguyên liệu sạch vùng Bình Phước, tiêu
+                chuẩn xuất khẩu.</p>
               <div class="product-card-footer">
                 <span class="product-price">Liên hệ báo giá</span>
-                <a href="#lien-he" class="product-link">
-                  Chi tiết <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
-                </a>
+                <button type="button" class="product-link open-contact-modal">
+                  Chi tiết <span class="material-icons-outlined" aria-hidden="true"
+                    style="font-size:1rem">arrow_forward</span>
+                </button>
               </div>
             </div>
           </article>
@@ -160,17 +228,20 @@
           <!-- Product 4 -->
           <article class="product-card fade-in fade-in-delay-4">
             <div class="product-card-img">
-              <img src="images/product-honey.png" alt="Mật ong rừng Tây Nguyên — mật ong vàng óng trong lọ thuỷ tinh" loading="lazy">
+              <img src="images/product-honey.png" alt="Mật ong rừng Tây Nguyên — mật ong vàng óng trong lọ thuỷ tinh"
+                loading="lazy">
               <span class="product-badge">Mới</span>
             </div>
             <div class="product-card-body">
               <h3>Mật Ong Rừng Tây Nguyên</h3>
-              <p>Mật ong nguyên chất 100% từ rừng Tây Nguyên, không pha trộn, giàu dinh dưỡng, vị ngọt thanh tự nhiên.</p>
+              <p>Mật ong nguyên chất 100% từ rừng Tây Nguyên, không pha trộn, giàu dinh dưỡng, vị ngọt thanh tự nhiên.
+              </p>
               <div class="product-card-footer">
                 <span class="product-price">Liên hệ báo giá</span>
-                <a href="#lien-he" class="product-link">
-                  Chi tiết <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
-                </a>
+                <button type="button" class="product-link open-contact-modal">
+                  Chi tiết <span class="material-icons-outlined" aria-hidden="true"
+                    style="font-size:1rem">arrow_forward</span>
+                </button>
               </div>
             </div>
           </article>
@@ -182,12 +253,14 @@
             </div>
             <div class="product-card-body">
               <h3>Tiêu Đen Phú Quốc</h3>
-              <p>Tiêu đen hạt chắc, cay nồng thơm lừng — đặc sản Phú Quốc nổi tiếng, được sấy khô tự nhiên theo phương pháp truyền thống.</p>
+              <p>Tiêu đen hạt chắc, cay nồng thơm lừng — đặc sản Phú Quốc nổi tiếng, được sấy khô tự nhiên theo phương
+                pháp truyền thống.</p>
               <div class="product-card-footer">
                 <span class="product-price">Liên hệ báo giá</span>
-                <a href="#lien-he" class="product-link">
-                  Chi tiết <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
-                </a>
+                <button type="button" class="product-link open-contact-modal">
+                  Chi tiết <span class="material-icons-outlined" aria-hidden="true"
+                    style="font-size:1rem">arrow_forward</span>
+                </button>
               </div>
             </div>
           </article>
@@ -195,17 +268,20 @@
           <!-- Product 6 -->
           <article class="product-card fade-in fade-in-delay-6">
             <div class="product-card-img">
-              <img src="images/product-tea.png" alt="Trà xanh Thái Nguyên — trà trong chén gốm với lá trà tươi" loading="lazy">
+              <img src="images/product-tea.png" alt="Trà xanh Thái Nguyên — trà trong chén gốm với lá trà tươi"
+                loading="lazy">
               <span class="product-badge">Cao cấp</span>
             </div>
             <div class="product-card-body">
               <h3>Trà Xanh Thái Nguyên</h3>
-              <p>Trà xanh búp non hái thủ công từ vùng chè Tân Cương — Thái Nguyên, hương thơm thanh mát, vị chát nhẹ dịu dàng.</p>
+              <p>Trà xanh búp non hái thủ công từ vùng chè Tân Cương — Thái Nguyên, hương thơm thanh mát, vị chát nhẹ
+                dịu dàng.</p>
               <div class="product-card-footer">
                 <span class="product-price">Liên hệ báo giá</span>
-                <a href="#lien-he" class="product-link">
-                  Chi tiết <span class="material-icons-outlined" aria-hidden="true" style="font-size:1rem">arrow_forward</span>
-                </a>
+                <button type="button" class="product-link open-contact-modal">
+                  Chi tiết <span class="material-icons-outlined" aria-hidden="true"
+                    style="font-size:1rem">arrow_forward</span>
+                </button>
               </div>
             </div>
           </article>
@@ -226,12 +302,14 @@
           <div class="about-content fade-in">
             <h3>Câu Chuyện Của Chúng Tôi</h3>
             <p>
-              <strong>NongSan Xanh</strong> được thành lập với sứ mệnh kết nối người tiêu dùng với những sản phẩm nông nghiệp
+              <strong>VanLinh Coop</strong> được thành lập với sứ mệnh kết nối người tiêu dùng với những sản phẩm nông
+              nghiệp
               chất lượng cao nhất Việt Nam. Chúng tôi hợp tác trực tiếp với nông dân tại các vùng nguyên liệu nổi tiếng
               như Sóc Trăng, Đắk Lắk, Bình Phước, Tây Nguyên, Phú Quốc và Thái Nguyên.
             </p>
             <p>
-              Mỗi sản phẩm đều trải qua quy trình kiểm tra nghiêm ngặt, đảm bảo đạt tiêu chuẩn an toàn thực phẩm quốc tế,
+              Mỗi sản phẩm đều trải qua quy trình kiểm tra nghiêm ngặt, đảm bảo đạt tiêu chuẩn an toàn thực phẩm quốc
+              tế,
               mang đến sự an tâm tuyệt đối cho khách hàng.
             </p>
 
@@ -284,7 +362,8 @@
               <div class="step-card">
                 <div class="step-number">3</div>
                 <h4>Xác Nhận & Thanh Toán</h4>
-                <p>Xác nhận đơn hàng, chọn phương thức thanh toán phù hợp: COD, chuyển khoản ngân hàng hoặc ví điện tử.</p>
+                <p>Xác nhận đơn hàng, chọn phương thức thanh toán phù hợp: COD, chuyển khoản ngân hàng hoặc ví điện tử.
+                </p>
               </div>
               <div class="step-card">
                 <div class="step-number">4</div>
@@ -306,7 +385,7 @@
         <div class="footer-brand">
           <a href="#trang-chu" class="logo">
             <span class="logo-icon" aria-hidden="true">🌿</span>
-            NongSan Xanh
+            VanLinh Coop
           </a>
           <p>
             Mang tinh hoa nông sản Việt Nam đến mọi gia đình.
@@ -366,7 +445,7 @@
             </li>
             <li class="contact-item">
               <span class="icon material-icons-outlined" aria-hidden="true">mail</span>
-              <a href="mailto:info@nongsanxanh.vn">info@nongsanxanh.vn</a>
+              <a href="mailto:info@vanlinhcoop.vn">info@vanlinhcoop.vn</a>
             </li>
             <li class="contact-item">
               <span class="icon material-icons-outlined" aria-hidden="true">schedule</span>
@@ -377,11 +456,79 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 NongSan Xanh. Tất cả quyền được bảo lưu.</p>
+        <p>&copy; 2026 VanLinh Coop. Tất cả quyền được bảo lưu.</p>
       </div>
     </div>
   </footer>
 
+  <!-- ========== CONTACT MODAL ========== -->
+  <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-label="Liên hệ nhanh">
+    <div class="modal-card">
+      <button class="modal-close" id="close-contact-modal" aria-label="Đóng">
+        <span class="material-icons-outlined">close</span>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon-wrap">
+          <span class="material-icons-outlined">support_agent</span>
+        </div>
+        <h2>Liên Hệ Nhanh</h2>
+        <p>Chọn kênh liên hệ phù hợp — đội ngũ tư vấn sẵn sàng hỗ trợ bạn!</p>
+      </div>
+
+      <div class="modal-body">
+        <a href="tel:0901234567" class="contact-card contact-card--phone">
+          <div class="contact-card-icon">
+            <span class="material-icons-outlined">phone_in_talk</span>
+          </div>
+          <div class="contact-card-info">
+            <h4>Gọi Điện</h4>
+            <p>0901 234 567</p>
+          </div>
+          <span class="material-icons-outlined contact-card-arrow">arrow_forward</span>
+        </a>
+
+        <a href="https://zalo.me/0901234567" target="_blank" rel="noopener" class="contact-card contact-card--zalo">
+          <div class="contact-card-icon contact-card-icon--zalo">
+            <span style="font-weight:700;font-size:1rem">Zalo</span>
+          </div>
+          <div class="contact-card-info">
+            <h4>Nhắn Zalo</h4>
+            <p>Chat trực tiếp, phản hồi nhanh</p>
+          </div>
+          <span class="material-icons-outlined contact-card-arrow">arrow_forward</span>
+        </a>
+
+        <a href="mailto:info@vanlinhcoop.vn" class="contact-card contact-card--email">
+          <div class="contact-card-icon contact-card-icon--email">
+            <span class="material-icons-outlined">mail</span>
+          </div>
+          <div class="contact-card-info">
+            <h4>Gửi Email</h4>
+            <p>info@vanlinhcoop.vn</p>
+          </div>
+          <span class="material-icons-outlined contact-card-arrow">arrow_forward</span>
+        </a>
+
+        <div class="contact-card contact-card--address">
+          <div class="contact-card-icon contact-card-icon--address">
+            <span class="material-icons-outlined">location_on</span>
+          </div>
+          <div class="contact-card-info">
+            <h4>Địa Chỉ</h4>
+            <p>123 Đường Nguyễn Huệ, Q.1, TP.HCM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span class="material-icons-outlined" style="font-size:1rem;color:#4ade80">schedule</span>
+        <span>Thứ 2 — Thứ 7: 8:00 — 18:00</span>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>

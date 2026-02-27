@@ -129,4 +129,45 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   counters.forEach(counter => observerCounter.observe(counter));
+
+  // ---- Contact Modal ----
+  const contactModal = document.getElementById('contact-modal');
+  const openModalBtns = document.querySelectorAll('#open-contact-modal, .open-contact-modal');
+  const closeModalBtn = document.getElementById('close-contact-modal');
+  let lastModalOpener = null;
+
+  const openModal = (e) => {
+    lastModalOpener = e.currentTarget;
+    contactModal.classList.add('active');
+    contactModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeModalBtn.focus({ preventScroll: true });
+  };
+
+  const closeModal = () => {
+    contactModal.classList.remove('active');
+    contactModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastModalOpener) {
+      lastModalOpener.focus({ preventScroll: true });
+      lastModalOpener = null;
+    }
+  };
+
+  openModalBtns.forEach(btn => btn.addEventListener('click', openModal));
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+
+  // Close on overlay click
+  if (contactModal) {
+    contactModal.addEventListener('click', (e) => {
+      if (e.target === contactModal) closeModal();
+    });
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 });
